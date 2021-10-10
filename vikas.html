@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikas fitness</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+    /* css reset */
+    body {
+        font-family: 'Playball', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background-image: url(gym.jpg);
+        /* background: url('gym.jpg'); */
+    }
+
+    .left {
+       /* border: 2px solid red; */
+        position: absolute;
+        left: 45px;
+        top: 14px;
+        /* display: inline-block; */
+        line-height: 22px;
+        font-size: 21px;
+        
+    }
+    .left img{
+        width: 90px;
+        filter: invert(8%);
+    }
+
+    .mid {
+        display: block;
+        width: 33.33%;
+        margin: 14px auto;
+       /*  border: 3px solid blue; */
+        
+    }
+
+    .right {
+        position: absolute;
+        right: 45px;
+        top: 14px;
+        display: inline-block;
+        /* border: 3px solid yellow; */
+    }
+    .navbar li{
+        display: inline-block;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 15px 10px;
+        font-size: 20px;
+    }
+    .navbar li a:hover {
+        text-decoration: underline;
+        color: aqua;
+       
+    }
+    .btn{
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        border: 2px solid gray;
+        border-radius: 10px;
+        padding: 10px 8px;
+        font-size: 20px;
+        cursor: pointer;
+        font-family: 'Playball', cursive;
+    }
+    .btn:hover{
+        background-color: rgba(90, 86, 86, 0.198);
+        color: gray;
+    }
+    .container{
+        border: 3px solid white;
+        margin: 82px 82px;
+        padding: 75px;
+        width: 28%;
+        border-radius: 20px;
+    }
+    .form input{
+        font-family: 'Playball', cursive;
+    text-align: center;
+    display: block;
+    width: 434px;
+    padding: 1px;
+    border: 2px solid black;
+    margin: 10px auto;
+    font-size: 25px;
+    border-radius: 8px;
+    }
+    .container h2{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 23%;
+        margin: auto;
+
+    }
+
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="logo.jpg" alt="">
+            <div>
+                Vikas Fitness
+            </div>
+
+        </div>
+        <!-- mid box for navigation -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home </a> </li>
+                <li><a href="#"> About us </a> </li>
+                <li><a href="#"> Fitness Calculator </a> </li>
+                <li><a href="#"> Contact us </a> </li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Calls us </button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Join the best gym of jaipur now</h2>
+        <form action="noaction.php"></form>
+        <div class="form">
+            <input type="text" name="" placeholder="Enter your name">
+        </div>
+        <div class="form">
+            <input type="text" name="" placeholder="Enter your Age">
+        </div>
+        <div class="form">
+            <input type="text" name="" placeholder="Enter your gender">
+        </div>
+        
+        <div class="form">
+            <input type="text" name="" placeholder="Enter your locality">
+        </div>
+        <div class="form">
+            <input type="text" name="" placeholder="Enter your contact number">
+        </div>
+        <div class="form">
+            <input type="text" name="" placeholder="Enter your Email id">
+        </div>
+        <button class="btn">Submit</button>
+    </div>
+</body>
+
+</html>
